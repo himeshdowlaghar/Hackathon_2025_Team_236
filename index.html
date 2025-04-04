@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Groundwater Guardian Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌊 Groundwater Guardian</h1>
+    <p class="level">Level: <span id="level">1</span></p>
+    <p id="timer">⏳ Time left: <span id="time">10</span>s</p>
+    <p id="question">Click start to begin!</p>
+
+    <div id="choices" class="choices">
+      <button onclick="handleChoice(0)">Choice 1</button>
+      <button onclick="handleChoice(1)">Choice 2</button>
+    </div>
+
+    <div id="feedback" class="feedback"></div>
+    <p id="score">Score: 0</p>
+    <button onclick="startGame()" class="start-btn">Start Game</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
